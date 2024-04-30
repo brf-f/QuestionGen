@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.Question = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Subject = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -36,22 +36,22 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // Question
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Question.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
-            this.label1.MaximumSize = new System.Drawing.Size(757, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(756, 174);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Question goes here, lorem ipsum dolor sit amen?";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.Question.AutoSize = true;
+            this.Question.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Question.Location = new System.Drawing.Point(10, 6);
+            this.Question.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
+            this.Question.MaximumSize = new System.Drawing.Size(757, 0);
+            this.Question.Name = "Question";
+            this.Question.Size = new System.Drawing.Size(756, 174);
+            this.Question.TabIndex = 1;
+            this.Question.Text = "Question goes here, lorem ipsum dolor sit amen?";
+            this.Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Question.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -99,7 +99,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Question, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 143);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -130,7 +130,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Question;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label Subject;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;

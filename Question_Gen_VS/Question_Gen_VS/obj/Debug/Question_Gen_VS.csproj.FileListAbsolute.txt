@@ -9,3 +9,7 @@ C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Q
 C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.pdb
 C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.exe
 C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.pdb
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.exe.manifest
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.application
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.exe.manifest
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.application

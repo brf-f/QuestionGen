@@ -21,6 +21,7 @@ namespace Question_Gen_VS
         {
             Question current_question = new Question();
             Subject.Text = current_question.subject;
+            Question.Text = current_question.question;
         }
 
         private void subject_Click(object sender, EventArgs e)
@@ -50,7 +51,7 @@ namespace Question_Gen_VS
         private static string[,] QuestionBank =
         {
         {"Physics", "question1"},
-        {"Computer Science", "question2"},
+        {"Comp Sci", "question2"},
         {"Maths", "question3"},
         {"Geo", "question4"}
     };
