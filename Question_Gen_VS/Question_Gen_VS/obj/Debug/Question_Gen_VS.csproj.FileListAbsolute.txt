@@ -1,0 +1,11 @@
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.Form1.resources
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.exe.config
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.exe
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\bin\Debug\Question_Gen_VS.pdb
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.exe
+C:\Users\DELL\OneDrive\Cods\CodsGithub\QuestionGen\QuestionGen\Question_Gen_VS\Question_Gen_VS\obj\Debug\Question_Gen_VS.pdb
