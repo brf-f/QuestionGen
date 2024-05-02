@@ -63,7 +63,17 @@ namespace Question_Gen_VS
             //{"Maths", "text"},
 
 
+            //{"Geo", "text"},
+
+
             //{"Physics", "text"},
+        {"Physics", "Define Lenz's Law"},
+        {"Physics", "Defintion of Simple Harmonic Motion"},
+        {"Physics", "Definition of Faraday's Law"},
+        {"Physics", "Flemming's Left-hand rule"},
+        {"Physics", "Right hand grip rule"},
+        {"Physics", "Definition of e.m.f (in terms of flux )"},
+        {"Physics", "How does the period of e.m.f. differ from that of magnetic flux?"},
 
 
             //{"Comp Sci", "text"},
@@ -92,7 +102,7 @@ namespace Question_Gen_VS
         {"Comp Sci", "(b)  Draw a diagram to show how a print queue may be implemented using a linked list.  [3]"},
         {"Comp Sci", "(c)  Explain why a stack would not be appropriate as a data structure for managing print jobs.  [3]"},
         {"Comp Sci", "(e)  Explain how a stack may be used in the implementation of a recursive function.  [4]"},
-        {"Comp Sci", "Human interaction with the computer system includes a range of usability problems.\n\n(a) Definethetermusability. [1]"},
+        {"Comp Sci", "Human interaction with the computer system includes a range of usability problems.\n\n(a) Define the term usability. [1]"},
         {"Comp Sci", "(b) Identify two methods that could be used to improve the accessibility of a computer system.  [2]"},
         {"Comp Sci", "By making direct reference to the technologies used, explain how a virtual private network (VPN) allows a travelling salesperson to connect securely to their company’s network. [4]"},
         {"Comp Sci", "Construct a truth table for the following Boolean expression. [3]\n\n(A and B) nor C"},
@@ -100,8 +110,8 @@ namespace Question_Gen_VS
         {"Comp Sci", "(c) (i)  Identify one external threat to the security of the school’s computer system. [1] \n\n (ii) State one way to protect the computer system from the threat identified in part (c)(i). [1]"},
         {"Comp Sci", "(a)  Draw an annotated diagram showing how an array can be used to store a stack. [2]"},
         {"Comp Sci", "(b)  Explain how elements in the stack may be reversed using a queue. [4]"},
-        {"Comp Sci", "(a) Definethetermserver. [1]"},
-        {"Comp Sci", "A hardware shop supplies a wide variety of bathroom equipment.  There are 15 shop assistantswhoservecustomers,3officestaffwhohandletheadministration,andamanager.  A specialized company is asked to design and implement a new computer system for  the shop. \n\n (a) (i)  Identify two different types of users of the system.  [2]  \n (ii)  Explain the role of users in the process of developing the new computer system. [3]"},
+        {"Comp Sci", "(a) Define the term server. [1]"},
+        {"Comp Sci", "A hardware shop supplies a wide variety of bathroom equipment.  There are 15 shop assistants who serve customers, 3 office staff who handle the administration, and a manager.  A specialized company is asked to design and implement a new computer system for  the shop. \n\n (a) (i)  Identify two different types of users of the system.  [2]  \n (ii)  Explain the role of users in the process of developing the new computer system. [3]"},
         {"Comp Sci", "(b)  Describe why it is useful to produce more than one prototype of the new system.  [2]"},
         {"Comp Sci", "(c) Outline two problems that may occur when transferring data from the old system to the new system. [4]"},
         {"Comp Sci", "The manager of the shop has decided to invest in a computer system which allows customers to make online orders from any place at any time. \n\n (d)  (i)  Explain how two or more customers are able to access the computer system at the same time.  [2]  \n  (ii)  Explain how each customer’s data is secure when two customers access the system at the same time.  [2]"},
@@ -109,7 +119,7 @@ namespace Question_Gen_VS
         {"Comp Sci", "Outline the function of the:  \n\n  (ii)  memory data register.  [2]"},
         {"Comp Sci", "(d) (i)  Identify two functions of the operating system.  [2]"},
         {"Comp Sci", "(ii)  State where the operating system is held when the computer is turned off.   [1]"},
-        {"Comp Sci", "(e)  (i)  Construct a diagram to illustrate the structure of a central processing unit (CPU), clearlyshowingtheflowofdatawithintheCPU. [4]"},
+        {"Comp Sci", "(e)  (i)  Construct a diagram to illustrate the structure of a central processing unit (CPU), clearly showing the flow of data within the CPU. [4]"},
         {"Comp Sci", "(ii)  Identify the part of the CPU which performs decoding.  [1]"},
         {"Comp Sci", "(iii)  Identify the part of the CPU which executes the instruction. [1]"},
         {"Comp Sci", "A control system is used to control sliding doors which automatically open to allow people in and out of a shop. \n\n (a) (i)  Identify one type of sensor in this system. [1]"},
