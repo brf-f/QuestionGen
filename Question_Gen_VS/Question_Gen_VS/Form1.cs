@@ -12,9 +12,9 @@ namespace Question_Gen_VS
 {
     public partial class Form1 : Form
     {
-        private void newQuestion()
+        private void newQuestion(string chosenSubject)
         {
-            Question current_question = new Question();
+            Question current_question = new Question(chosenSubject);
             Subject.Text = current_question.subject;
             Question.Text = current_question.question;
         }
@@ -26,7 +26,9 @@ namespace Question_Gen_VS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            newQuestion();
+            Subject.Text = "Subject";
+            Console.WriteLine(Subject.Text);
+            newQuestion(Subject.Text);
         }
 
         private void subject_Click(object sender, EventArgs e)
@@ -51,7 +53,18 @@ namespace Question_Gen_VS
 
         private void reloadImage_Click(object sender, EventArgs e)
         {
-            newQuestion();
+            newQuestion(Subject.Text);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Question.Text);
+            System.Windows.Forms.MessageBox.Show("Question copied to clipboard");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 
@@ -61,9 +74,11 @@ namespace Question_Gen_VS
         private static readonly string[,] QuestionBank =
         {
             //{"Maths", "text"},
+            {"Maths", "text"},
 
 
             //{"Geo", "text"},
+            {"Geo", "text"},
 
 
             //{"Physics", "text"},
@@ -72,8 +87,19 @@ namespace Question_Gen_VS
         {"Physics", "Definition of Faraday's Law"},
         {"Physics", "Flemming's Left-hand rule"},
         {"Physics", "Right hand grip rule"},
-        {"Physics", "Definition of e.m.f (in terms of flux )"},
+        {"Physics", "Definition of induced e.m.f (in terms of flux )"},
         {"Physics", "How does the period of e.m.f. differ from that of magnetic flux?"},
+        {"Physics", "Define Gravitational Force"},
+        {"Physics", "Define Graviational Field Strength"},
+        {"Physics", "Define Gravitational Potential Energy"},
+        {"Physics", "Define Gravitational Potential"},
+        {"Physics", "Define Electric Force"},
+        {"Physics", "Define Electric Field Strength"},
+        {"Physics", "Define Electric Potential Energy"},
+        {"Physics", "Define Electric Potential"},
+        {"Physics", "What are equipotential surfaces?"},
+        {"Physics", "What is the difference between Magnetic Flux and Magnetic Flux Linkage?"},
+        {"Physics", "What is flux density?"},
 
 
             //{"Comp Sci", "text"},
@@ -111,7 +137,7 @@ namespace Question_Gen_VS
         {"Comp Sci", "(a)  Draw an annotated diagram showing how an array can be used to store a stack. [2]"},
         {"Comp Sci", "(b)  Explain how elements in the stack may be reversed using a queue. [4]"},
         {"Comp Sci", "(a) Define the term server. [1]"},
-        {"Comp Sci", "A hardware shop supplies a wide variety of bathroom equipment.  There are 15 shop assistants who serve customers, 3 office staff who handle the administration, and a manager.  A specialized company is asked to design and implement a new computer system for  the shop. \n\n (a) (i)  Identify two different types of users of the system.  [2]  \n (ii)  Explain the role of users in the process of developing the new computer system. [3]"},
+        {"Comp Sci", "A hardware shop supplies a wide variety of bathroom equipment. There are 15 shop assistants who serve customers, 3 office staff who handle the administration, and a manager. A specialized company is asked to design and implement a new computer system for  the shop. \n\n (a) (i)  Identify two different types of users of the system.  [2]  \n (ii)  Explain the role of users in the process of developing the new computer system. [3]"},
         {"Comp Sci", "(b)  Describe why it is useful to produce more than one prototype of the new system.  [2]"},
         {"Comp Sci", "(c) Outline two problems that may occur when transferring data from the old system to the new system. [4]"},
         {"Comp Sci", "The manager of the shop has decided to invest in a computer system which allows customers to make online orders from any place at any time. \n\n (d)  (i)  Explain how two or more customers are able to access the computer system at the same time.  [2]  \n  (ii)  Explain how each customer’s data is secure when two customers access the system at the same time.  [2]"},
@@ -123,7 +149,7 @@ namespace Question_Gen_VS
         {"Comp Sci", "(ii)  Identify the part of the CPU which performs decoding.  [1]"},
         {"Comp Sci", "(iii)  Identify the part of the CPU which executes the instruction. [1]"},
         {"Comp Sci", "A control system is used to control sliding doors which automatically open to allow people in and out of a shop. \n\n (a) (i)  Identify one type of sensor in this system. [1]"},
-        {"Comp Sci", "(ii) Identify one piece of hardware, other than sensors, that is part of the control system. [1]"},
+        {"Comp Sci", "(ii) Identify one piece of hardware, other than sensors, that is part of the control system. (Sliding Automated Doors) [1]"},
         {"Comp Sci", "(iii)  With reference to the role of sensors, outline the sequence of steps within the computer control system that will take place when a person approaches the door. (Sliding Automated door) [3]"},
         {"Comp Sci", "(b) (i) Define the term interrupt.   [2] \n (ii)  Describe a situation in this system where an interrupt would occur. (Automated Sliding Doors)   [2]"},
         {"Comp Sci", "(c)  Discuss the contribution of computer control systems in industry where they replace human workers. [6]"},
@@ -134,11 +160,19 @@ namespace Question_Gen_VS
         public string subject;
         public string question;
 
-        public Question()
+        public Question(string chosenSubject)
         {
-            int num = rnd.Next(0, QuestionBank.GetLength(0));
-            subject = QuestionBank[num, 0];
-            question = QuestionBank[num, 1];
+            while(true)
+            {
+                int i = rnd.Next(0, QuestionBank.GetLength(0));
+                Console.WriteLine(chosenSubject);
+                if ((chosenSubject == "Subject") || (QuestionBank[i, 0] == chosenSubject))
+                {
+                    subject = QuestionBank[i, 0];
+                    question = QuestionBank[i, 1];
+                    break;
+                }
+            }
         }
     }
 

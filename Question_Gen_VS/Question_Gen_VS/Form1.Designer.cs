@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Question = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Subject = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.reloadImage = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Subject = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Question
@@ -55,42 +55,6 @@
             this.Question.Text = "Question goes here, lorem ipsum dolor sit amen?";
             this.Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Question.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.Subject, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(166, 12);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(459, 69);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // Subject
-            // 
-            this.Subject.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Subject.AutoSize = true;
-            this.Subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.Subject.Location = new System.Drawing.Point(0, 0);
-            this.Subject.Margin = new System.Windows.Forms.Padding(0);
-            this.Subject.MaximumSize = new System.Drawing.Size(500, 95);
-            this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(459, 69);
-            this.Subject.TabIndex = 0;
-            this.Subject.Text = "Subject";
-            this.Subject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Subject.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -121,36 +85,68 @@
             this.reloadImage.TabStop = false;
             this.reloadImage.Click += new System.EventHandler(this.reloadImage_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Wheat;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 66);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Subject
+            // 
+            this.Subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.Subject.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Subject.DropDownHeight = 150;
+            this.Subject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
+            this.Subject.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Subject.FormattingEnabled = true;
+            this.Subject.IntegralHeight = false;
+            this.Subject.Items.AddRange(new object[] {
+            "Subject",
+            "Comp Sci",
+            "Geo",
+            "Physics",
+            "Maths"});
+            this.Subject.Location = new System.Drawing.Point(167, 12);
+            this.Subject.Name = "Subject";
+            this.Subject.Size = new System.Drawing.Size(467, 62);
+            this.Subject.TabIndex = 1;
+            this.Subject.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 341);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Subject);
             this.Controls.Add(this.reloadImage);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(818, 388);
             this.MinimumSize = new System.Drawing.Size(818, 388);
             this.Name = "Form1";
             this.Text = "Question Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label Question;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label Subject;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox reloadImage;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox Subject;
     }
 }
 
