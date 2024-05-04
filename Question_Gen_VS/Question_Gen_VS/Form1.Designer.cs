@@ -31,12 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Question = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.reloadImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Subject = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reloadImage = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Question
@@ -50,7 +52,7 @@
             this.Question.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
             this.Question.MaximumSize = new System.Drawing.Size(757, 0);
             this.Question.Name = "Question";
-            this.Question.Size = new System.Drawing.Size(756, 219);
+            this.Question.Size = new System.Drawing.Size(756, 237);
             this.Question.TabIndex = 1;
             this.Question.Text = "Question goes here, lorem ipsum dolor sit amen?";
             this.Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,33 +69,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.Question, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 98);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 87);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(776, 231);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(776, 249);
             this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // reloadImage
-            // 
-            this.reloadImage.BackColor = System.Drawing.Color.CadetBlue;
-            this.reloadImage.Location = new System.Drawing.Point(697, 15);
-            this.reloadImage.Name = "reloadImage";
-            this.reloadImage.Size = new System.Drawing.Size(67, 66);
-            this.reloadImage.TabIndex = 3;
-            this.reloadImage.TabStop = false;
-            this.reloadImage.Click += new System.EventHandler(this.reloadImage_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Wheat;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 66);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Subject
             // 
@@ -111,11 +93,56 @@
             "Geo",
             "Physics",
             "Maths"});
-            this.Subject.Location = new System.Drawing.Point(167, 12);
+            this.Subject.Location = new System.Drawing.Point(122, 12);
             this.Subject.Name = "Subject";
             this.Subject.Size = new System.Drawing.Size(467, 62);
             this.Subject.TabIndex = 1;
             this.Subject.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Wheat;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(613, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // reloadImage
+            // 
+            this.reloadImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reloadImage.BackColor = System.Drawing.Color.CadetBlue;
+            this.reloadImage.Image = ((System.Drawing.Image)(resources.GetObject("reloadImage.Image")));
+            this.reloadImage.Location = new System.Drawing.Point(722, 8);
+            this.reloadImage.Name = "reloadImage";
+            this.reloadImage.Size = new System.Drawing.Size(66, 66);
+            this.reloadImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reloadImage.TabIndex = 3;
+            this.reloadImage.TabStop = false;
+            this.reloadImage.Click += new System.EventHandler(this.reloadImage_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Tomato;
+            this.pictureBox2.Image = global::Question_Gen_VS.Properties.Resources.issue_triangle_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(66, 66);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 
@@ -123,6 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 341);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Subject);
             this.Controls.Add(this.reloadImage);
@@ -135,8 +163,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reloadImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,9 +173,10 @@
         #endregion
         private System.Windows.Forms.Label Question;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.PictureBox reloadImage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox Subject;
+        private System.Windows.Forms.PictureBox reloadImage;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

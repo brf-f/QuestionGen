@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Web;
 
 namespace Question_Gen_VS
 {
     public partial class Form1 : Form
     {
-        private void newQuestion(string chosenSubject)
+            private void newQuestion(string chosenSubject)
         {
             Question current_question = new Question(chosenSubject);
             Subject.Text = current_question.subject;
@@ -66,6 +68,16 @@ namespace Question_Gen_VS
         {
             
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // Create issue
+            string encodedTitle = "[Question Issue]";
+            string encodedBody = Question.Text;
+            string url = $"https://github.com/brf-f/QuestionGen/issues/new?title={encodedTitle}&body={encodedBody}";
+
+            Process.Start(url);
+        }
     }
 
     class Question
@@ -74,11 +86,29 @@ namespace Question_Gen_VS
         private static readonly string[,] QuestionBank =
         {
             //{"Maths", "text"},
-            {"Maths", "text"},
+        {"Maths", "Getting the absolute value of a complex number"},
 
 
             //{"Geo", "text"},
-            {"Geo", "text"},
+        {"Geo", "2 contrasting case studies for earthquakes"},
+        {"Geo", "2 contrasting volcano case studies"},
+        {"Geo", "Mass Movement 2 contrasting case studies"},
+        {"Geo", "Physical and human factors affecting population distribution at the global scale"},
+        {"Geo", "Global patterns and classification of economic development"},
+        {"Geo", "Two detailed and cotrasting examples of uneven population distribution"},
+        {"Geo", "The consequences of megacity growth for individuals and societies \n[Case study of a contemporary megacity experiencing rapid growth]"},
+        {"Geo", "Population change and demographic transition over time, including natural increase, fertility rate, life expectancy, population structure and dependancy ratios\n [Detailed examples of 2 or more contrasting countries]"},
+        {"Geo", "The causes & consequences of forced migration and internal displacement\n [Detailed examples of 2 or more forced movements, to include enviromental and political push factors, and consequences for people and places]"},
+        {"Geo", "Policies associated with managing population change"},
+        {"Geo", "The demographic dividend & ways in which population could be considered a resource when contemplating possible futures\n [One case study of a country benefiting from Demographic Dividend]"},
+        {"Geo", "Explain the causes of changes in the global energy balance, and the role of feedback loops"},
+        {"Geo", "Impacts of climate change on people and places, including health hazards, migration and ocean transport routes"},
+        {"Geo", "Disparities in exposure to climate change risk and vulnerability, including variations in people's location, wealth, social differences (age, gender, education), risk perception\n [Detailed Examples of 2 or more societies with contrasting vulnerability]"},
+        {"Geo", "Goverment-led adaptation and mitigation strategies for global climate change"},
+        {"Geo", "What is carbon emmission offsetting and trading?"},
+        {"Geo", "Explain geo-engineering"},
+        {"Geo", "Case study of the response to climate change in one country focusing on the actions of non-govermental stakeholders"},
+        {"Geo", "Why could the perspectives and viewpoints differ about the need for, practicality and urgency of action on global climate change"},
 
 
             //{"Physics", "text"},
