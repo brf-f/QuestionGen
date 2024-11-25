@@ -86,6 +86,10 @@ namespace Question_Gen_VS
         private static readonly string[,] QuestionBank =
         {
             //{"Maths", "text"},
+        {"Maths", "Whats is an even function, and how do we test for one?"},
+        {"Maths", "What is an odd function and how do we test for one?"},
+        {"Maths", "How do you convert a quadratic function to vertex form?"},
+        {"Maths", "What is a special property of complex roots of a function"},
         {"Maths", "Find the derivative of f(x) = e^x + ln(x)"},
         {"Maths", "Solve the equation 4x^2 + 3x - 7 = 0"},
         {"Maths", "Evaluate the integral ∫(0 to 1) x^2 + 2x dx"},
